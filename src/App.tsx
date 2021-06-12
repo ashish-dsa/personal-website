@@ -4,10 +4,10 @@ import React, {ReactElement} from "react";
 import {Platform, StatusBar} from "react-native";
 import {Provider as PaperProvider} from "react-native-paper";
 import iconFont from "react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf";
-import {CombinedDefaultTheme} from "services/theming";
+import {CombinedDarkTheme} from "services/theming";
 
 const theme = {
-  ...CombinedDefaultTheme,
+  ...CombinedDarkTheme,
 };
 const App: React.FC = (): ReactElement => {
   return (
