@@ -14,7 +14,7 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx|ts|tsx)$/,
-        exclude: /node_modules[/\\](?!react-native-vector-icons)/,
+        exclude: /node_modules[/\\](?!react-native-vector-icons)(?!react-native-typewriter)/,
         use: {
           loader: "babel-loader",
           options: {
@@ -32,7 +32,6 @@ module.exports = {
   resolve: {
     alias: {
       "react-native": "react-native-web",
-      "@storybook/react-native": "@storybook/react",
       "react-native-gesture-handler": "react-native-web",
       screens: path.resolve(__dirname, "src", "screens"),
       components: path.resolve(__dirname, "src", "components"),

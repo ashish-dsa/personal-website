@@ -1,9 +1,9 @@
 import {AppRegistry, Platform} from "react-native";
 import App from "./src/App";
 
-AppRegistry.registerComponent("myApp", () => App);
+AppRegistry.registerComponent("personalWebsite", () => App);
 if (Platform.OS === "web") {
-  AppRegistry.runApplication("myApp", {
+  AppRegistry.runApplication("personalWebsite", {
     rootTag: document.getElementById("root"),
   });
 }
